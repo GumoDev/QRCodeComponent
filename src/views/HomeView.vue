@@ -1,37 +1,35 @@
 <script setup>
-  import { ref } from 'vue';
+import { ref } from 'vue';
 
- let message = ref('Happy Coding !!!')
+
 </script>
 
 <template>
-  <section class="flex flex-col justify-center items-center  bg-gray-900 text-white h-[calc(100vh-64px)]">
-    <h1 class="text-center p-2 text-xl">Home View</h1> 
-    <h2 class="">
-      Layout made with 
-      <a href="https://vuejs.org/" class="bg-green-400 text-white px-3 rounded mx-2">
-        Vue 3
-      </a> + 
-      <a href="https://vitejs.dev/" class="bg-violet-400 text-white px-3 rounded mx-2">
-        Vite
-      </a> + 
-      <a href="https://tailwindcss.com/" class="bg-blue-300 text-white px-3 rounded mx-2">
-        Tailwind
-      </a> 
-    </h2>
-
-    <div class="logos flex my-5">
-      <img class="h-20 w-20 mx-5" src="../assets/logo.svg" alt="logo-vue">
-      <img class="h-20 w-20 mx-5" src="../assets/logo-vite.png" alt="logo-vite">
-      <img class="h-20 w-20 mx-5" src="../assets/Tailwind_CSS_Logo.svg.png" alt="logo-tailwind">
+  <main class="bg-blue-200 h-screen flex flex-col items-center justify-center">
+    <div class="qr-card flex flex-col justify-center items-center bg-white w-11/12 max-w-sm h-fit p-4 rounded-2xl">
+      <div class="qr rounded-xl overflow-hidden">
+        <img src="../assets/image-qr-code.png" alt="">
+      </div>
+      <div class="qr-card-title">
+        <h1 class="text-[hsl(218,44%,22%)] text-2xl text-center font-bold my-3">
+          Improve your front-end <br>
+          skills by building projects
+        </h1>
+      </div>
+      <div class="qr-card-msg">
+        <p class=" font-normal text-center my-3 text-[hsl(220,15%,55%)]">
+          Scan the QR code to visit Frontend <br>
+          Mentor and take your coding skills <br>
+          to the next level
+        </p>
+      </div>
     </div>
 
-    <div class="start my-5 flex flex-col justify-center items-center ">
-      <h3 class="text-3xl  my-5 bg-gradient-to-r from-green-400 via-purple-400 to-blue-300 text-white px-3 py-1 rounded animate-pulse">
-        {{ message }}
-      </h3>
-      <img class=" h-96 rounded-lg  " src="../assets/dribbble-code.gif" alt="">
-    </div>
-  </section>
+    <footer class="attribution mt-5">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/GumoDev">GumoDev</a>.
+    </footer>
+  </main>
+
 </template>
 
